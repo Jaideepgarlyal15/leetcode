@@ -1,19 +1,21 @@
+# 5. Longest Palindromic Substring
+# link: https://leetcode.com/problems/longest-palindromic-substring/
 class Solution:
     def longestPalindrome(self, l: str) -> str:
-        n=len(l)
-        ans=[]
-        for i in range(n):
-            for j in range(n-1,i-1,-1):
-                if i-1<0:
-                    x,y=l[i:j+1],l[j::-1]
-                else:
-                    x,y=l[i:j+1],l[j:max(i-1,-1):-1]
-                print(f"x: {x},y: {y}")
-                if x==y:
-                    ans.append(l[i:j+1])
-        print(ans)
-        ans.sort(key=lambda x:len(x),reverse=True)
-        return ans[0]
+        start,size=0,1
+        for i in range(len(l)):
+            right=i
+            while right<len(l) and l[i]==l[right]:
+                right+=1
+            left=i-1
+            while left>=0 and right<len(l) and l[left]==l[right]:
+                left-=1
+                right+=1
+            temp=-left+right-1
+            if temp>size:
+                size=temp
+                start=left+1
+        return l[start:start+size]
 
-obj=Solution()
-print(obj.longestPalindrome(input()))
+# obj=Solution()
+# print(obj.longestPalindrome(input()))
