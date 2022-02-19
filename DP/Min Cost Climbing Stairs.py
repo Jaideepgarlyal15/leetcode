@@ -40,5 +40,5 @@ class Solution:
         return min(x,y)
         '''
 
-obj=Solution()
-print(obj.minCostClimbingStairs(list(map(int,input().split()))))
+# obj=Solution()
+# print(obj.minCostClimbingStairs(list(map(int,input().split()))))

@@ -20,5 +20,5 @@ class Solution:
         memo={}
         return dp(len(l)-1)
 
-obj=Solution()
-print(obj.deleteAndEarn(list(map(int,input().split()))))
+# obj=Solution()
+# print(obj.deleteAndEarn(list(map(int,input().split()))))
