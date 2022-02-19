@@ -28,5 +28,5 @@ class Solution:
         return z
         '''
 
-obj=Solution()
-print(obj.tribonacci(int(input())))
+# obj=Solution()
+# print(obj.tribonacci(int(input())))
