@@ -1,6 +1,6 @@
 # 1675. Minimize Deviation in Array
 # https://leetcode.com/problems/minimize-deviation-in-array/
-from heapq import heappop, heappush, heapify, heappushpop
+from heapq import heapify, heappushpop
 class Solution:
     def minimumDeviation(self, nums):
         m,temp=float('inf'),float('inf')
