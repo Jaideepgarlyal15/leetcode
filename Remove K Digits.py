@@ -10,3 +10,6 @@ class Solution:
             stack.append(i)
         ans="".join(i for i in stack[:-k or None]).lstrip('0') or '0'
         return ans
+
+# obj=Solution()
+# print(obj.removeKdigits(input(),int(input())))
