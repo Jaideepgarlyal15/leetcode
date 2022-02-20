@@ -13,6 +13,7 @@ class Solution:
                     ans=max(ans,dp[i][j])
         return ans**2
 
+# take input  
 # obj=Solution()
 # n=int(input())
 # x=[]
