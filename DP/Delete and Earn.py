@@ -1,8 +1,7 @@
 # 740. Delete and Earn
 # https://leetcode.com/problems/delete-and-earn/
 
-from functools import lru_cache
-
+# from functools import lru_cache
 
 class Solution:
     def deleteAndEarn(self, nums):
